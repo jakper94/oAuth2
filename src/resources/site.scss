@@ -1,0 +1,55 @@
+@import "./variables.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background:  $color-background;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+}
+
+section {
+  min-height: calc(100vh - 160px);
+  padding: 80px;
+}
+
+h1{
+  color: $color-header-text;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: $color-text;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  /* font-family: "Orbitron", sans-serif; */
+  font-weight: 500;
+  margin: 0;
+  color: $color-text;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0;
+}

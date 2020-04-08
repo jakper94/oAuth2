@@ -1,0 +1,63 @@
+@import "../../resources/variables.scss";
+
+$navigation-height: 80px;
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 80px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;  
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: $navigation-height;
+  background-color: $color-navigation;
+  z-index: 10000;
+
+  .logo {
+    display: flex;
+    flex-flow: row;;
+    img {
+      height: $navigation-height - 25px;
+    }
+    .text {
+      color: $color-text;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: flex-start;
+      h4 {
+        margin: 2px;
+      }
+    }
+  }
+
+  .menu {
+    a {
+      display: inline-block;
+      line-height: $navigation-height;
+      padding: 0 10px;
+      font-size: 1rem;
+      color: $color-navigation-text;
+      &:hover {
+        color: $color-underline;
+        
+      }
+    }
+    
+
+    .active {
+      color: $color-active;
+      font-weight: bold;
+      text-decoration: underline $color-underline ;
+    }
+    .icons{
+      display: inline-block;
+      line-height: $navigation-height;
+    }
+  }
+}
