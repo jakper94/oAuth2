@@ -1,0 +1,21 @@
+@import "../../resources/variables.scss";
+
+.fbContent{
+    margin:auto;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: beige; 
+
+    img{
+        
+    }
+    h2{
+        color: $color-text;
+    }
+}
+
+.logInButton{
+    width: 500px;
+    background-color: gray;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./navigation.scss";
 
-
 const Navigation = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -12,6 +11,7 @@ const Navigation = () => {
       <div className="logo">
         <div className="text">
           <h4>oAuth2</h4>
+          
          
         </div>
       </div>
@@ -22,6 +22,8 @@ const Navigation = () => {
         <NavLink exact to ="/about" onClick= {()=> scrollToTop()}>
           About
         </NavLink>
+        
+       
        
       </div>
     </div>

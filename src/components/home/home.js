@@ -1,10 +1,11 @@
 import React from "react";
 import "./home.scss";
+import FacebookLogIn from "../login/login"
 
 const Home =()=>{
     return(
         <section>
-            <h1>Test like something </h1>
+            <FacebookLogIn/>
         </section>
        
     )
