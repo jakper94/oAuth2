@@ -1,0 +1,76 @@
+@import "../../resources/variables.scss";
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 10px;
+
+  > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .notSignedInGrid{
+    grid-column: 1/7;
+   
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    .startText{
+      padding:10px;
+      grid-column: 1/6;
+      background-color: gray;
+      border-radius:20px;
+    }
+    .logInBoxes {
+      grid-column: 6/ 7;
+      background-color: gray;
+      border-radius:20px;
+
+      }
+    
+  }
+ 
+  .signedIn-grid{
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+    > div {
+        border-radius: 20px;
+      }
+    .user-info{
+        grid-column: 1/6;
+        display: flex;
+        background-color: rgba(182, 162, 145, 0.8);
+        flex-direction:row;
+        img{
+          margin:10px;
+            border-radius: 20px;
+            width: 40%;
+            
+        }
+        .currentUserInfo{
+            
+            margin:10px;
+        }
+    }
+    .right-div{
+        grid-column: 6/7;
+        .sign-out-button{
+            border-radius: 10px;
+            margin:auto;
+            background-color: gray;
+            padding:10px 10px;
+            margin-right: 0px;
+            &:hover{
+                background-color: black;
+                color:white;
+            }
+          }
+    }
+  } 
+}

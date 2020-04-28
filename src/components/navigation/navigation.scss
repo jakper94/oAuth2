@@ -25,7 +25,7 @@ $navigation-height: 80px;
       height: $navigation-height - 25px;
     }
     .text {
-      color: $color-text;
+      color: $color-navigation-text;
       display: flex;
       flex-flow: column;
       justify-content: center;
